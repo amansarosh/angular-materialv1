@@ -11,9 +11,17 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatMenuModule} from '@angular/material';
 import {MatTooltipModule} from '@angular/material';
 import {MatRadioModule} from '@angular/material';
+import {MatProgressBarModule} from '@angular/material';
+import {MatCardModule} from '@angular/material';
+import {MatSelectModule} from '@angular/material';
 
 @NgModule({
-  imports: [MatInputModule,MatButtonModule, MatProgressSpinnerModule, MatTabsModule, MatCheckboxModule, MatToolbarModule, MatSliderModule, MatSlideToggleModule, MatMenuModule, MatTooltipModule, MatRadioModule],
-  exports: [MatInputModule,MatButtonModule, MatProgressSpinnerModule, MatTabsModule, MatCheckboxModule, MatToolbarModule,MatSliderModule, MatSlideToggleModule, MatMenuModule, MatTooltipModule, MatRadioModule],
+  imports: [MatInputModule,MatButtonModule, MatProgressSpinnerModule, MatTabsModule,
+   MatCheckboxModule, MatToolbarModule, MatSliderModule, MatSlideToggleModule, MatMenuModule, 
+   MatTooltipModule, MatRadioModule, MatProgressBarModule, MatCardModule, MatSelectModule],
+
+  exports: [MatInputModule,MatButtonModule, MatProgressSpinnerModule, MatTabsModule, MatCheckboxModule, 
+    MatToolbarModule,MatSliderModule, MatSlideToggleModule, MatMenuModule, MatTooltipModule,
+     MatRadioModule, MatProgressBarModule, MatCardModule, MatSelectModule],
 })
 export class MaterialModule { }

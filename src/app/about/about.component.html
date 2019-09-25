@@ -1,0 +1,24 @@
+<mat-toolbar color="primary">
+        <mat-toolbar-row>
+          <span>Welcome to Random Material Comps. Created By Aman Sarosh ッ</span>
+      
+          <span class="example-spacer"></span>
+          <a mat-button href="/home">Home</a>
+
+         <a mat-button href="/about">About</a>
+      
+          <!--Trigger-->
+          <button mat-button [matMenuTriggerFor]="menu">Contact</button>
+      <mat-menu #menu="matMenu">
+            <a mat-menu-item href = "mailto: amansarosh13@gmail.com">Fly Me An Email</a>
+      </mat-menu>
+      <button mat-raised-button
+              matTooltip="You cannot log in"
+              aria-label="Button that displays a tooltip when focused or hovered over">
+        Sign In
+      </button>
+        </mat-toolbar-row>
+      </mat-toolbar>
+      <br>
+      <mat-card><b>Who Am I?</b></mat-card>
+      <mat-card><p>Hi! My Name is Aman and im 14 years old. I started coding when since I was 13 and have been coding ever since. My strongest skillset is in <a href="https://developer.apple.com/swift/">Swift</a>, <a href="https://developer.apple.com/xcode/swiftui/">SwiftUI</a> , <a href="https://cli.angular.io/">AngularCLI</a>, <a href="https://www.typescriptlang.org/">TypeScript</a>, and in <a href="https://material.angular.io/">Angular Material</a>, as well as <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a>, and <a href="https://sass-lang.com/">CSS/SCSS/SAAS</a></p></mat-card>
