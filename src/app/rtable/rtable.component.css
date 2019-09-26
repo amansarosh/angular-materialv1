@@ -1,0 +1,36 @@
+.example-spacer {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+* {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+mat-spinner {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+mat-toolbar {
+  background-color: #202124;
+}
+
+mat-toolbar-row {
+  background-color: #202124;
+}
+
+table {
+  width: 100%;
+}
+/*# sourceMappingURL=rtable.component.css.map */

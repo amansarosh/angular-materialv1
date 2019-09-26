@@ -1,7 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 @import '@angular/material/prebuilt-themes/deeppurple-amber.css';
 * {
+    font-family: "Montserrat", sans-serif;
     justify-content: center;
+    align-self: center;
     text-align: center;
 }
 
@@ -9,4 +11,8 @@ mat-spinner {
     flex-direction: row-reverse;
     justify-content: center;
     text-align: center;
+}
+
+a:active {
+    color:  #23d160;
 }

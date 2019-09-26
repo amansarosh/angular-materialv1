@@ -1,0 +1,54 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <span>Welcome to Random Material Comps. Created By Aman Sarosh ッ</span>
+
+        <span class="example-spacer"></span>
+
+        <a mat-button href="/home">Home</a>
+        <a mat-button href="/about">About</a>
+
+        <!--Trigger-->
+        <button mat-button [matMenuTriggerFor]="menu">Contact</button>
+        <mat-menu #menu="matMenu">
+            <a mat-menu-item href="mailto: amansarosh13@gmail.com">Fly Me An Email</a>
+        </mat-menu>
+        <button mat-raised-button matTooltip="You cannot log in"
+            aria-label="Button that displays a tooltip when focused or hovered over">
+            Sign In
+        </button>
+    </mat-toolbar-row>
+</mat-toolbar>
+<br>
+<!--Table-->
+<mat-form-field>
+    <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
+</mat-form-field>
+
+<mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+    <!-- Position Column -->
+    <ng-container matColumnDef="position">
+        <mat-header-cell *matHeaderCellDef> No. </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.position}} </mat-cell>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="name">
+        <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.name}} </mat-cell>
+    </ng-container>
+
+    <!-- Weight Column -->
+    <ng-container matColumnDef="weight">
+        <mat-header-cell *matHeaderCellDef> Weight </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.weight}} </mat-cell>
+    </ng-container>
+
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="symbol">
+        <mat-header-cell *matHeaderCellDef> Symbol </mat-header-cell>
+        <mat-cell *matCellDef="let element"> {{element.symbol}} </mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+</mat-table>
